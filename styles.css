@@ -40,8 +40,7 @@ html {
 }
 
 /* 03 - Header Components */
-
-.cd_hero_button {
+.cd_ .cd_hero_button {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }

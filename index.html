@@ -26,6 +26,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
         />
+        <script src='scripts.js'></script>
     </head>
     <body>
         <header>
@@ -33,31 +34,18 @@
                 class="
                     navbar
                     fixed-top
-                    navbar-expand-lg navbar-dark
+                    navbar-expand-sm 
+                    navbar-dark
                     bg-transparent
-                    container
+                    container-fluid
                 "
             >
-                <div class="container-fluid">
+                <div class="container">
                     <a class="navbar-brand p-1 cd_focus-border--white" href="#"
                         >Navbar</a
                     >
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse justify-content-end"
-                        id="navbarSupportedContent"
-                    >
-                        <ul class="navbar-nav mb-2 mb-lg-0">
+                   
+                        <ul class="navbar-nav mb-2 mb-lg-0 flex-row">
                             <li class="nav-item mx-1 visually-hidden-focusable">
                                 <a
                                     class="
@@ -67,7 +55,7 @@
                                         cd_focus-border--white
                                     "
                                     aria-current="page"
-                                    href="#"
+                                    href="#content"
                                     >Skip to Content</a
                                 >
                             </li>
@@ -80,19 +68,25 @@
                                         cd_focus-border--white
                                     "
                                     aria-current="page"
-                                    href="#"
-                                    >Home</a
+                                    href="#about"
+                                    >About</a
                                 >
                             </li>
                             <li class="nav-item mx-1">
                                 <a
                                     class="nav-link p-1 cd_focus-border--white"
                                     href="#"
-                                    >Link</a
+                                    >Blog</a
+                                >
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a
+                                    class="nav-link p-1 cd_focus-border--white"
+                                    href="#"
+                                    >Careers</a
                                 >
                             </li>
                         </ul>
-                    </div>
                 </div>
             </nav>
             <style>
@@ -142,7 +136,7 @@
         </header>
         <main id="content" class="cd_content container">
             <!-- About, Our Consultants, Blog, Contact -->
-            <article class="col-sm-10 my-5 mx-auto cd_article-block cd_jumbo-py-md">
+            <article id="about" class="col-sm-10 my-5 mx-auto cd_article-block cd_jumbo-py-md">
                 <div
                     class="
                         d-flex
@@ -222,7 +216,7 @@
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-8 col-md-6 col-xl-4 p-4">
+                        <div class="col-10 col-md-6 col-xl-4 p-4">
                             <a href="#" class="nav-link cd_focus-border--accent text-black-50">
 
                                 <div class="card h-100">
@@ -240,7 +234,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-8 col-md-6 col-xl-4 p-4">
+                        <div class="col-10 col-md-6 col-xl-4 p-4">
                             <a href="#" class="nav-link cd_focus-border--accent text-black-50">
 
                                 <div class="card h-100">
@@ -257,7 +251,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </div><div class="col-8 col-md-6 col-xl-4 p-4">
+                        </div><div class="col-10 col-md-6 col-xl-4 p-4">
                             <a href="#" class="nav-link cd_focus-border--accent text-black-50">
 
                                 <div class="card h-100">
@@ -274,7 +268,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </div><div class="col-8 col-md-6 col-xl-4 p-4">
+                        </div><div class="col-10 col-md-6 col-xl-4 p-4">
                             <a href="#" class="nav-link cd_focus-border--accent text-black-50">
 
                                 <div class="card h-100">
