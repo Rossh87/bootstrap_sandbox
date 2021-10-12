@@ -28,12 +28,20 @@
         />
     </head>
     <body>
-        <header class="container-fluid bg-transparent">
+        <header>
             <nav
-                class="navbar navbar-expand-lg navbar-light bg-light container"
+                class="
+                    navbar
+                    fixed-top
+                    navbar-expand-lg navbar-dark
+                    bg-transparent
+                    container
+                "
             >
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand p-1 cd_focus-border--white" href="#"
+                        >Navbar</a
+                    >
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -50,26 +58,41 @@
                         id="navbarSupportedContent"
                     >
                         <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
+                            <li class="nav-item mx-1">
                                 <a
-                                    class="nav-link active"
+                                    class="
+                                        nav-link
+                                        active
+                                        p-1
+                                        cd_focus-border--white
+                                    "
                                     aria-current="page"
                                     href="#"
                                     >Home</a
                                 >
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                            <li class="nav-item mx-1">
+                                <a
+                                    class="nav-link p-1 cd_focus-border--white"
+                                    href="#"
+                                    >Link</a
+                                >
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </header>
-        <main id="content">
-            <div class="bg-dark text-center text-white py-5">
+            <style>
+                #hero:before {
+                    background-image: url('/assets/skyline-panorama.jpg');
+                }
+            </style>
+            <div
+                id="hero"
+                class="text-center bg-dark text-white cd_hero cd_jumbo-py-md"
+            >
                 <h1 class="display-5 fw-bold">Build your business</h1>
-                <div class="col-lg-6 col-sm-8 mx-auto">
+                <div class="col-lg-6 col-sm-8 mx-auto hero_content">
                     <p class="fs-5 mb-4">
                         Leverage our consultants' best-in-class dynamism to
                         drive your workflows to new heights of efficiency.
@@ -103,23 +126,151 @@
                     </form>
                 </div>
             </div>
+        </header>
+        <main id="content" class="cd_content container">
+            <!-- About, Our Consultants, Blog, Contact -->
+            <article class="col-sm-10 my-5 mx-auto cd_article-block">
+                <div
+                    class="
+                        d-flex
+                        justify-content-between
+                        align-items-end
+                        lh-1
+                        cd_article-block_header
+                        mb-2
+                    "
+                >
+                    <h2
+                        id="about-section-heading"
+                        class="px-2 fs-2 text-black-50"
+                    >
+                        About
+                    </h2>
+                    <a
+                        aria-labelledby="about-section-heading"
+                        class="
+                            nav-link
+                            fs-4
+                            text-black-50
+                            cd_focus-border--accent
+                            text-capitalize
+                            cd_article-block_link
+                            cd_animated-underline--accent
+                        "
+                        href="about"
+                        >read more
+                        <span class="cd_article-block_arrow">></span></a
+                    >
+                </div>
+                <p class="fs-5 text-black-50 p-1 lh-lg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero quaerat molestiae id distinctio quia veritatis,
+                    debitis, quo omnis asperiores hic sapiente! Reprehenderit
+                    rerum eligendi dolores ipsa dolorem vel, perferendis
+                    corrupti? Temporibus, consequuntur? Ab, ea. Voluptas rerum
+                    consequatur laboriosam nisi? Optio sunt aut natus. Autem
+                    quod error voluptate magnam mollitia libero reiciendis
+                    adipisci non eveniet modi. At adipisci libero animi dolorem
+                </p>
+            </article>
+
+            <article class="col-sm-10 my-5 mx-auto cd_article-block">
+                <div
+                    class="
+                        d-flex
+                        justify-content-between
+                        align-items-end
+                        lh-1
+                        cd_article-block_header
+                        mb-2
+                    "
+                >
+                    <h2
+                        id="about-section-heading"
+                        class="px-2 fs-2 text-black-50"
+                    >
+                        Our Consultants
+                    </h2>
+                    <a
+                        aria-labelledby="about-section-heading"
+                        class="
+                            nav-link
+                            fs-4
+                            text-black-50
+                            cd_focus-border--accent
+                            text-capitalize
+                            cd_article-block_link
+                            cd_animated-underline--accent
+                        "
+                        href="/our-consultants"
+                        >read more
+                        <span class="cd_article-block_arrow">></span></a
+                    >
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-8 col-sm-6 col-md-4 p-4">
+                            <div class="card text-white">
+                                <img
+                                    src="/assets/hs-1.jpg"
+                                    alt="professional headshot of consultant"
+                                    class="card-img"
+                                />
+                                <div class="card-img-overlay show">
+                                    <span class="text-capitalize"
+                                        >greg gustavson</span
+                                    >
+                                    <p class="card-text">Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-6 col-md-4 p-4">
+                            <div class="card text-white">
+                                <img
+                                    src="/assets/hs-1.jpg"
+                                    alt="professional headshot of consultant"
+                                    class="card-img"
+                                />
+                                <div class="card-img-overlay show">
+                                    <span class="text-capitalize"
+                                        >greg gustavson</span
+                                    >
+                                    <p class="card-text">Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-6 col-md-4 p-4">
+                            <div class="card text-white">
+                                <img
+                                    src="/assets/hs-1.jpg"
+                                    alt="professional headshot of consultant"
+                                    class="card-img"
+                                />
+                                <div class="card-img-overlay">
+                                    <span class="text-capitalize"
+                                        >greg gustavson</span
+                                    >
+                                    <p class="card-text">Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-6 col-md-4 p-4">
+                            <div class="card text-white">
+                                <img
+                                    src="/assets/hs-1.jpg"
+                                    alt="professional headshot of consultant"
+                                    class="card-img"
+                                />
+                                <div class="card-img-overlay bg-dark">
+                                    <span class="text-capitalize"
+                                        >greg gustavson</span
+                                    >
+                                    <p class="card-text">Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </article>
         </main>
     </body>
 </html>
-
-<!-- <li class="nav-item visually-hidden-focusable">
-    <a href="#content" class="nav-link m-2"
-        >Skip to content</a
-    >
-</li>
-<li class="nav-item">
-    <a class="nav-link m-2" aria-current="page" href="/"
-        >Home</a
-    >
-</li>
-<li class="nav-item">
-    <a class="nav-link m-2" href="#">About</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link m-2" href="#">Contact</a>
-</li> -->
