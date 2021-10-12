@@ -69,6 +69,16 @@ html {
 }
 
 /* 04 - Main Components */
+.cd_article-block--spaced-bottom {
+    padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 900px) {
+    .cd_article-block--spaced-bottom {
+        padding-bottom: 8rem;
+    }
+}
+
 .cd_article-block_header {
     border-left: 0.5rem solid var(--accent-color);
 }
@@ -132,7 +142,7 @@ html {
 
 /* 6.3 - Transparency Utilities */
 .card-img-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.85);
     opacity: 0;
 }
 .card-img-overlay.show {
